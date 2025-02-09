@@ -15,7 +15,6 @@ console.log('🍍Pinia store. Count:', counterStore.count)
 
 <style module lang="scss">
 .container {
-  background-color: #00DC82;
-  padding: 0.5rem;
+  @apply bg-green-300 p-4;
 }
 </style>
