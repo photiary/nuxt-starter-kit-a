@@ -1,5 +1,5 @@
 # 🛠️ 환경 구성
-`Nuxt` + `ESlint` + `Pinia`
+`Nuxt` + `ESlint` + `Pinia` + `SASS`
 
 # 🍕 프로젝트 생성
 
@@ -62,4 +62,12 @@ npx nuxi module add eslint
 
 ```bash
 pnpm install pinia @pinia/nuxt
+```
+
+# 🍿 SASS
+
+- https://nuxt.com/docs/getting-started/styling#using-preprocessors
+
+```bash
+pnpm install -D sass
 ```
