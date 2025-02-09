@@ -54,3 +54,12 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 ```bash
 npx nuxi module add eslint
 ```
+
+# 🍍 Pinia
+
+- https://nuxt.com/modules/pinia
+- https://pinia.vuejs.org/ssr/nuxt.html
+
+```bash
+pnpm install pinia @pinia/nuxt
+```
