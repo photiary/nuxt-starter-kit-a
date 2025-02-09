@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="$style.container">
     <NuxtRouteAnnouncer />
     <NuxtWelcome />
   </div>
@@ -12,3 +12,10 @@ import { useCounterStore } from '@/stores/counter'
 const counterStore = useCounterStore()
 console.log('🍍Pinia store. Count:', counterStore.count)
 </script>
+
+<style module lang="scss">
+.container {
+  background-color: #00DC82;
+  padding: 0.5rem;
+}
+</style>
