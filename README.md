@@ -1,5 +1,5 @@
 # 🛠️ 환경 구성
-`Nuxt` + `ESlint` + `Pinia` + `SASS`
+`Nuxt` + `ESlint` + `Pinia` + `SASS` + `Tailwindcss`
 
 # 🍕 프로젝트 생성
 
@@ -70,4 +70,16 @@ pnpm install pinia @pinia/nuxt
 
 ```bash
 pnpm install -D sass
+```
+
+# 🌊 tailwindcss
+
+Tailwindcss v4 가 배포되었지만 Nuxt에서 `@apply`가 동작하지 않은 문제로 v3을 사용. 
+
+- https://tailwindcss.nuxtjs.org/getting-started/installation
+
+```bash
+pnpm i -D @nuxtjs/tailwindcss
+
+pnpm tailwindcss init
 ```
