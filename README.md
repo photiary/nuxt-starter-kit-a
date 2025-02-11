@@ -101,4 +101,7 @@ node --eval "fs.writeFileSync('.prettierignore','# Ignore artifacts:\nbuild\ncov
 pnpm add -D eslint-config-prettier
 
 pnpm add -D eslint-plugin-prettier
+
+# tailwindcss 용 prettier
+pnpm add -D prettier-plugin-tailwindcss
 ```
