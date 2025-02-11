@@ -1,11 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 // eslint-disable-next-line no-undef
 export default defineNuxtConfig({
-  modules: [
-    '@nuxt/eslint',
-    '@pinia/nuxt',
-    '@nuxtjs/tailwindcss',
-  ],
+  modules: ['@nuxt/eslint', '@pinia/nuxt', '@nuxtjs/tailwindcss'],
   devtools: { enabled: true },
   devServer: {
     port: 3050,
@@ -13,11 +9,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   eslint: {
     config: {
-      stylistic: {
-        indent: 2,
-        quotes: 'single',
-        semi: false,
-      },
+      // prettier를 사용하므로 `stylistic` 설정을 사용하지 않는다.
     },
   },
-})
+});

@@ -1,5 +1,6 @@
 # 🛠️ 환경 구성
-`Nuxt` + `ESlint` + `Pinia` + `SASS` + `Tailwindcss`
+
+`Nuxt` + `ESlint` + `Pinia` + `SASS` + `Tailwindcss` + `Prettier`
 
 # 🍕 프로젝트 생성
 
@@ -74,7 +75,7 @@ pnpm install -D sass
 
 # 🌊 tailwindcss
 
-Tailwindcss v4 가 배포되었지만 Nuxt에서 `@apply`가 동작하지 않은 문제로 v3을 사용. 
+Tailwindcss v4 가 배포되었지만 Nuxt에서 `@apply`가 동작하지 않은 문제로 v3을 사용.
 
 - https://tailwindcss.nuxtjs.org/getting-started/installation
 
@@ -82,4 +83,25 @@ Tailwindcss v4 가 배포되었지만 Nuxt에서 `@apply`가 동작하지 않은
 pnpm i -D @nuxtjs/tailwindcss
 
 pnpm tailwindcss init
+```
+
+# 🍟 Prettier
+
+Nuxt 추천 stylelint는 많은 패키지가 필요하므로 사용하지 않는다.
+
+- https://prettier.io/docs/install
+
+```bash
+pnpm add --save-dev --save-exact prettier
+
+node --eval "fs.writeFileSync('prettier.config.js','')"
+
+node --eval "fs.writeFileSync('.prettierignore','# Ignore artifacts:\nbuild\ncoverage\n')"
+
+pnpm add -D eslint-config-prettier
+
+pnpm add -D eslint-plugin-prettier
+
+# tailwindcss 용 prettier
+pnpm add -D prettier-plugin-tailwindcss
 ```
