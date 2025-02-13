@@ -105,3 +105,27 @@ pnpm add -D eslint-plugin-prettier
 # tailwindcss 용 prettier
 pnpm add -D prettier-plugin-tailwindcss
 ```
+
+`# 📕 Storybook
+
+- https://storybook.nuxtjs.org/getting-started/setup
+
+```bash
+pnpm dlx storybook@latest init
+
+pnpm add -D @storybook/builder-vite
+
+pnpm add -D @storybook-vue/nuxt
+```
+
+`.storybook/main.ts`
+
+```
+  core: {
+    builder: '@storybook/builder-vite',
+  },
+```
+
+Storybook 정보 제공 비활성화
+
+- https://storybook.js.org/telemetry
