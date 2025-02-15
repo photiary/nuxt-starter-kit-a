@@ -83,6 +83,9 @@ Tailwindcss v4 가 배포되었지만 Nuxt에서 `@apply`가 동작하지 않은
 pnpm i -D @nuxtjs/tailwindcss
 
 pnpm tailwindcss init
+
+# Intellij language server 가 @nuxtjs/tailwindcss를 참조하지 않아 에러가 발생하여 참조할 수 있도록 설치
+pnpm i -D tailwindcss@3.4.17
 ```
 
 # 🍟 Prettier

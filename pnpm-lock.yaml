@@ -81,6 +81,9 @@ importers:
       storybook:
         specifier: ^8.5.5
         version: 8.5.5(prettier@3.5.0)
+      tailwindcss:
+        specifier: ^3.4.17
+        version: 3.4.17
 
 packages:
 
