@@ -1,6 +1,6 @@
 # 🛠️ 환경 구성
 
-`Nuxt` + `ESlint` + `Pinia` + `SASS` + `Tailwindcss` + `Prettier`
+`Nuxt` + `ESlint` + `Pinia` + `SASS` + `Tailwindcss` + `Prettier` + `Storybook`
 
 # 🍕 프로젝트 생성
 
