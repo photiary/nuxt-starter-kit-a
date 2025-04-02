@@ -17,5 +17,12 @@ const config: StorybookConfig = {
   core: {
     builder: '@storybook/builder-vite',
   },
+  viteFinal: (config) => {
+    config.server = {
+      ...config.server,
+      hmr: false, // @nuxtjs/storybook 버전 충돌로 HMR이 정상 동작하지 않아 사용하지 않는다.
+    };
+    return config;
+  },
 };
 export default config;
